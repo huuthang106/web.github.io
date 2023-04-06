@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="firstpart">
+
+            <nav>
+                <ul>
+                    <li><a href="#article">Sản Phẩm</a></li>
+                    <li><a href="#news">Tin Mới</a></li>
+                    <li><a href="#suKien">Sự Kiện</a></li>
+                </ul>
+                <ul class="ul2">
+                    <button onclick="login1()" id="login1">login</button>
+                </ul>
+            </nav>
+            <div id="login">
+                <form>
+                    <button type="submit" onclick="xoa()" id="x">x</button>
+                    <label for="username">Tên đăng nhập:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <button type="submit">Đăng nhập</button>
+                    <br>
+                    <p>Nếu bạn chưa có tài khoản, hãy bấm vào nút Đăng ký dưới đây.</p>
+                    <button type="button" id="registerButton">Đăng ký</button>
+                </form>
+            </div>
+            <!-- <div class="content1">
+                Chào mừng đến với cửa hàng của chúng tôi! Chúng tôi là một cửa hàng bán kính thiên văn chuyên cung cấp
+                các sản phẩm liên quan đến thiên văn học, bao gồm các kính thiên văn, đầu dò và phụ kiện. Với đội ngũ
+                nhân viên giàu kinh nghiệm và kiến thức sâu rộng về thiên văn học, chúng tôi cam kết cung cấp cho khách
+                hàng những sản phẩm chất lượng cao và dịch vụ tốt nhấ<t class="br"></t>
+
+                Tại cửa hàng của chúng tôi, bạn có thể tìm thấy một loạt các sản phẩm thiên văn học phù hợp với mọi nhu
+                cầu, từ những sản phẩm dành cho người mới bắt đầu cho đến những sản phẩm chuyên nghiệp dành cho những
+                nhà nghiên cứu và các chuyên gia thiên văn học. Chúng tôi luôn cập nhật sản phẩm mới nhất và thông tin
+                về thiên văn học để đảm bảo khách hàng của chúng tôi luôn được trải nghiệm những sản phẩm và dịch vụ tốt
+                nhất. <br>
+
+                Hãy ghé thăm cửa hàng của chúng tôi để khám phá thế giới thiên văn học và trải nghiệm những sản phẩm
+                tuyệt vời nhất! <br>
+            </div> -->
+
+        </div>
+        <div id="news">
+
+            <span class="h1">Những sự kiện thiên văn đáng chú ý nhất năm 2023</span> <br>
+            <div class="content">
+                <img id="onmou" onmouseover="fover()" onmouseout="fout()" src="img/3.jpg" alt="" width="25%">
+                <div> <span>
+                        NASA cho hay, một sao chổi được phát hiện vào tháng 3.2022 tiến gần Mặt trời nhất vào ngày
+                        12.1.2023. <br>
+                        Sao chổi được đặt tên là C/2022 E3 (ZTF) sẽ đi qua Trái đất gần nhất vào ngày 2.2.2023. <br>
+
+                        Trong hầu hết tháng 1.2023, những người yêu thiên văn ở Bắc bán cầu có thể quan sát được <br>
+                        sao chổi này trên bầu trời buổi sáng qua ống nhòm còn những người yêu thiên văn ở Nam bán cầu
+                        <br>
+                        có thể quan sát vào đầu tháng 2.</span></div>
+            </div>
+        </div>
+
+        <article id="article">
+            <div class="product">
+                <img id="sp1" class="hinhsp" src="img/a0.jpg" alt="">
+                <br>
+
+                <div class="tensp">
+                    <span class="marketing">HOT</span>[BẢO HÀNH 1 ĐỔI 1]-KÍNH THIÊN VĂN KHÚC XẠ F50360 HÀNG NHẬP KHẨU
+                    SIÊU NÉT
+                </div>
+                <div class="giasp"><del>₫590.000</del> ₫368.000 <span class="sale">38% GIẢM</span></div>
+                <button class="before" onclick="before0()">Trước</button>
+                <button onclick="next0()" class="next">Sau</button>
+                <br>
+                <button onclick="buy0()" class="buy">Mua Ngay</button>
+
+            </div>
+
+            <div class="product">
+                <img id="sp2" class="hinhsp" src="img/b0.jpg" alt="">
+                <br>
+
+                <div class="tensp">
+                    <span class="marketing">HOT</span>Kính Viễn Vọng Phoenix 76700 Kính Thiên Văn Ngắm Sao Kính Khúc Xạ
+                    Thiên Văn
+                </div>
+                <div class="giasp"><del>₫2.070.000</del>
+                    ₫1.450.000 <span class="sale">30% GIẢM</span></div>
+                <button class="before" onclick="before1()">Trước</button>
+                <button onclick="next1()" class="next">Sau</button>
+                <br>
+                <button onclick="buy0()" class="buy">Mua Ngay</button>
+
+            </div>
+
+            <div class="product">
+                <img id="sp3" class="hinhsp" src="img/d0.jpg" alt="">
+                <br>
+
+                <div class="tensp">
+                    <span class="marketing">HOT</span>KKính viễn vọng thiên văn 70300 ngắm trăng sao rõ nét, du lịch, dã
+                    ngoại giá rẻ mini
+                </div>
+                <div class="giasp"><del>₫1.590.000</del>
+                    ₫1.048.000<span class="sale">34% GIẢM</span></div>
+                <button class="before" onclick="before2()">Trước</button>
+                <button onclick="next2()" class="next">Sau</button>
+                <br>
+                <button onclick="buy0()" class="buy">Mua Ngay</button>
+
+            </div>
+        </article>
+
+        <div class="suKien">
+            <div><img src="img/c0.jpg"></div>
+            <div><img src="img/c1.jpg"></div>
+            <div><img src="img/c2.jpg"></div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <h4>Về chúng tôi</h4>
+                        <p>Chúng tôi cung cấp các sản phẩm thiên văn học chất lượng cao cho các nhà nghiên cứu và người
+                            yêu thích thiên văn học.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <h4>Liên hệ</h4>
+                        <p>Địa chỉ: 123 Đường ABC, Quận XYZ, Thành phố HCM<br>
+                            Điện thoại: 0123456789<br>
+                            Email: contact@ban_kinh_thien_van.com</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h4>Theo dõi chúng tôi</h4>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook">ThangnhPC06404</i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter">thangnhpc06404@fpt.edu.vn</i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram">Hoàn thành 6/4/2023 </i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
